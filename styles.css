@@ -121,3 +121,11 @@ header button:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both; /* Add this to ensure the footer is at the bottom of the page */
+}
