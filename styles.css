@@ -4,125 +4,159 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1, h2, h3 {
     font-weight: bold;
     color: #337ab7;
-}
-
-a {
+    margin-bottom: 10px;
+  }
+  
+  a {
     text-decoration: none;
     color: #337ab7;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: #23527c;
-}
-
-button {
+  }
+  
+  button {
     background-color: #337ab7;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-button:hover {
+    border-radius: 5px;
+  }
+  
+  button:hover {
     background-color: #23527c;
-}
-
-/* Header Styles */
-
-header {
+  }
+  
+  /* Header Styles */
+  
+  header {
     background-color: #337ab7;
     padding: 20px;
     text-align: center;
-}
-
-header nav ul {
+    color: #fff;
+  }
+  
+  header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
-}
-
-header nav li {
+  }
+  
+  header nav li {
     margin-right: 20px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-header p {
+  }
+  
+  header p {
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-/* Feature Section Styles */
-
-.feature-grid {
+  }
+  
+  header button {
+    margin-top: 20px;
+  }
+  
+  /* Feature Section Styles */
+  
+  .feature-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
-}
-
-.feature {
+  }
+  
+  .feature {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature img {
+  }
+  
+  .feature img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
-}
-
-.feature h3 {
+    border-radius: 50%;
+  }
+  
+  .feature h3 {
     font-size: 18px;
     margin-bottom: 10px;
-}
-
-/* About Section Styles */
-
-.about {
+  }
+  
+  /* About Section Styles */
+  
+  .about {
     padding: 20px;
-}
-
-.about p {
+  }
+  
+  .about p {
     margin-bottom: 20px;
-}
-
-.about ul {
+  }
+  
+  .about ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.about li {
+  }
+  
+  .about li {
     margin-bottom: 10px;
-}
-
-/* Footer Styles */
-
-footer {
+  }
+  
+  .about a {
+    color: #337ab7;
+  }
+  
+  .about a:hover {
+    color: #23527c;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
     background-color: #337ab7;
     padding: 10px;
     text-align: center;
     color: #fff;
-}
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+   .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .feature-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+   .feature {
+      padding: 10px;
+    }
+  }
